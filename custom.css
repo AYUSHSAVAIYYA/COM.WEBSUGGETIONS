@@ -1,4 +1,13 @@
 .ayush-img{
-max-weight: 100%;
-height:auto;
+  background-image: url("websuggestionsposter.png");
+  min-height: 380px;
+  max-width: 100%;
+    height: auto;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* Needed to position the navbar */
+  position: relative;
 }
+
