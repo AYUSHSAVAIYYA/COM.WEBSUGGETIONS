@@ -4,3 +4,13 @@ body {
   background-color: #f2f2f2;
   text-align:center;
 }
+
+nav {
+  font-weight:bold;
+  background-color:#ff0000;
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
