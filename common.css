@@ -17,6 +17,7 @@ body {
   padding: 15px;
   text-decoration: none;
   font-size:13px;
+  width:70px;
 }
 .topnav{
    overflow: hidden;
