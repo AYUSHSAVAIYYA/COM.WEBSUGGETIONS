@@ -31,7 +31,7 @@ header{
 }
 .bg-img {
   /* The image used */
-  background-image: url("websuggetionsposter.png");
+  background-image: url("poster.png");
   min-height: 380px;
   max-width: 100%;
     height: auto;
