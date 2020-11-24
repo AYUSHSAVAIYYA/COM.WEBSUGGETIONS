@@ -9,14 +9,14 @@ body {
 }
 
 .topnav a{
-  background-color:red;
-  float: left;
-  color: white;
+  float: right;
+  color:  #f2f2f2;
+  display: block;
   text-align: center;
-  padding: 25px;
+  padding: 14px 16px;
   text-decoration: none;
   font-size:13px;
-  width:70px;
+  width:100px;
 }
 .topnav{
    overflow: hidden;
