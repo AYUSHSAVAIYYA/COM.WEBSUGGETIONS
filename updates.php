@@ -9,6 +9,7 @@
   <link rel="shortcut icon" href="favicon.png" type="x-icon">
   <link rel="stylesheet" href="common.css">
   <link rel="stylesheet" href="bootstrap.css">
+  <link rel="stylesheet" href="updates.css">
   <script src="bootstrap.js"></script>
 </head>
 <body>
@@ -40,9 +41,9 @@ $newsdata = json_decode($response);
 foreach($newsdata->articles as $news)
 {
 ?>
-         <div class="row">
+         <div class="row newsgrid">
            <div class="col-md-3">
-             <img src="<?php $news->urltoimage ?>" alt="">
+             <img src="<?php $news->urltoimage ?>" alt="news thumbnail" class="rounded">
            </div>
            <div class="col-md-9">
              <h2>Title <?php echo $news->title ?></h2>
