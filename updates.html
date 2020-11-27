@@ -8,6 +8,8 @@
   <title>News</title>
   <link rel="shortcut icon" href="favicon.png" type="x-icon">
   <link rel="stylesheet" href="common.css">
+  <link rel="stylesheet" href="bootstrap.css">
+  <script src="bootstrap.js"></script>
 </head>
 <body>
 <header>
@@ -20,15 +22,41 @@
    <a href="services.html">services</a>
    <a href="index.html">Home</a>
 </nav>
-   <main>
-          <h3>Letest news updates</h3>
-          <nav>
+       <?php
+http://newsapi.org/v2/everything?q=bitcoin&from=2020-10-27&sortBy=publishedAt&apiKey=95d3c9592830413eaa03ded82d86e3ba
+$response = file_get_content($url);
+$newsdata = json_decode($response);
+?>    
+       <main>
+     <div class="jumbotron">
+          <h3 style="text-align:center">Letest news updates</h3>
+          <nav style="text-align:center">
              <a href="index.html">Home</a>
              <a href="Updates.html">News</a>
           </nav>
-     <artical>
-       
-     </artical>
+            </div>
+         <div class="container-fluid">
+         <?php
+foreach($newsdata->articles as $news)
+{
+?>
+         <div class="row">
+           <div class="col-md-3">
+             <img src="<?php $news->urltoimage ?>" alt="">
+           </div>
+           <div class="col-md-9">
+             <h2>Title <?php echo $news->title ?></h2>
+             <h5>description<?php echo $news->description ?></h5>
+             <p>content<?php echo $news->content ?></p>
+             <h6>auther:<?php echo $news->author ?></h6>
+             <h6>published<?php echo $news-> publishedAt ?></h6>
+           </div>
+           </div>
+           <?php
+}
+?>
+         </div>
+         </div>
   </main>
   <hr>
     <footer>
