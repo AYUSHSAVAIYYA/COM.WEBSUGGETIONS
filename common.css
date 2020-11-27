@@ -8,6 +8,10 @@ body {
   background-color: #e8e7e3;
 }
 
+header{
+  padding:15px;
+}
+
 .topnav a{
   float: right;
   color:  #121111;
@@ -28,15 +32,4 @@ footer{
   background-color:#d4d1cb;
   text-align:center;
   font-weight:bold;
-}
-
-header{
-  padding:15px;
-}
-
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column.side, .column.middle {
-    width: 100%;
-  }
 }
