@@ -26,6 +26,16 @@ header{
    overflow: hidden;
   background-color: #ffff1a;
 }
+.topnav a:hover {
+  background-color: #ddd;
+  color: red;
+}
+/* Position the navbar container inside the image */
+.container {
+  position: absolute;
+  margin: 20px;
+  width: auto;
+}
 
 footer{
   padding: 20px;
