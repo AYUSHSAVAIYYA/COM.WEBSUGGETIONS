@@ -10,8 +10,13 @@ background-color: whitesmoke;
 img{
 width: calc(100% - 20px);
 height: 250px;
+  margin:10px
 }
 .newsgride{
 margin:10px;
 border: 1px solid lightgray;
+  padding:10px;
+}
+.container-fluid{
+  width:90%;
 }
