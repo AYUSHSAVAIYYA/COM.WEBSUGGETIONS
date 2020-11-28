@@ -23,41 +23,14 @@
    <a href="services.html">services</a>
    <a href="index.html">Home</a>
 </nav>
-       <?php
-http://newsapi.org/v2/everything?q=bitcoin&from=2020-10-27&sortBy=publishedAt&apiKey=95d3c9592830413eaa03ded82d86e3ba
-$response = file_get_content($url);
-$newsdata = json_decode($response);
-?>    
-       <main>
+   <main>
      <div class="jumbotron">
           <h3 style="text-align:center">Letest news updates</h3>
           <nav style="text-align:center">
              <a href="index.html">Home</a>
              <a href="Updates.html">News</a>
           </nav>
-            </div>
-         <div class="container-fluid">
-         <?php
-foreach($newsdata->articles as $news)
-{
-?>
-         <div class="row newsgrid">
-           <div class="col-md-3">
-             <img src="<?php $news->urltoimage ?>" alt="news thumbnail" class="rounded">
-           </div>
-           <div class="col-md-9">
-             <h2>Title <?php echo $news->title ?></h2>
-             <h5>description<?php echo $news->description ?></h5>
-             <p>content<?php echo $news->content ?></p>
-             <h6>auther:<?php echo $news->author ?></h6>
-             <h6>published<?php echo $news-> publishedAt ?></h6>
-           </div>
-           </div>
-           <?php
-}
-?>
-         </div>
-         </div>
+       </div>
   </main>
   <hr>
     <footer>
@@ -70,5 +43,17 @@ foreach($newsdata->articles as $news)
           <a href="#">Cookie Policy</a>
       </div>
    </footer>
+  <script>
+    function getnews(){
+      fetch('http://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=95d3c9592830413eaa03ded82d86e3ba')
+      .then(a=>a.json())
+      .then(response=>{
+        for(var i=0;i<response.articles.length;i++){
+          document.getelementbyid("output").innerhtml+="<div style='padding-top:20px;><img style='float:left;width:150px;'
+          src=""+response.articles[i].urltoimage+""><h1>"+response.articles[i].title+"</h1>"+response.articles[i].source.name+"<br>"+response.articles[i].description+"<a href=""response.articles[i].url+""target='_blank>"+response.articles[i].url+"</a></div>";
+        }
+      })
+    }
+  </script>
 </body>
 </html>
