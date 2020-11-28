@@ -8,9 +8,7 @@
   <title>News</title>
   <link rel="shortcut icon" href="favicon.png" type="x-icon">
   <link rel="stylesheet" href="common.css">
-  <link rel="stylesheet" href="bootstrap.css">
   <link rel="stylesheet" href="updates.css">
-  <script src="bootstrap.js"></script>
 </head>
 <body>
 <header>
@@ -50,7 +48,10 @@
       .then(response=>{
         for(var i=0;i<response.articles.length;i++){
           document.getelementbyid("output").innerhtml+="<div style='padding-top:20px;><img style='float:left;width:150px;'
-          src=""+response.articles[i].urltoimage+""><h1>"+response.articles[i].title+"</h1>"+response.articles[i].source.name+"<br>"+response.articles[i].description+"<a href=""response.articles[i].url+""target='_blank>"+response.articles[i].url+"</a></div>";
+          src=""+response.articles[i].urltoimage+"">
+            <h1>"+response.articles[i].title+"</h1>
+          "+response.articles[i].source.name+"<br>"+response.articles[i].description+"
+          <a href=""response.articles[i].url+""target='_blank>"+response.articles[i].url+"</a></div>";
         }
       })
     }
