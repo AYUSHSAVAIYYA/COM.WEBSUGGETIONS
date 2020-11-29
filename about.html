@@ -9,21 +9,24 @@
   <title>about</title>
   <link rel="shortcut icon" href="favicon.png" type="x-icon">
   <link rel="stylesheet" href="common.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
 </head>
 <body>
   <header>
     
   </header>
-  <nav class="topnav">
+ <div class="topnav" id="myTopnav">
+ <a href="index.html" class="active">Home</a>
+ <a href="services.html">services</a>
+ <a href="blog.html">Blogs</a>
+ <a href="updates.html">News</a>
+ <a href="contact.html">Contact</a>
   <a href="about.html">About</a>
-   <a href="contact.html">Contact</a>
-   <a href="updates.html">News</a>
-   <a href="blog.html">Blogs</a>
-   <a href="services.html">services</a>
-   <a href="index.html">Home</a>
-    </div>
-</nav>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+  </div>
 <main>
   <p><b>Hello my name is "AYUSH SAVAIYYA". I am a blogger ,investor ,influanser.
     <a href="https://www.linkedin.com/in/ayushsavaiyya/">Linkedin</a>
@@ -42,5 +45,12 @@
          <a href="disclaimer">Cookie Policy</a>
       </div>
 </footer>
+  <script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
 </body>
 </html>
