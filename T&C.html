@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <title>terms of use</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keyword" content="term's of use">
   <meta name="description" content="websuggetions terms and conditions">
   <meta name="copyright" content="Ayush savaiyya, https://websuggetions.tech">
-  <meta name="keyword" content="term's of use">
-  <title>Terms of use</title>
   <link rel="shortcut icon" href="favicon.png" type="x-icon">
   <link rel="stylesheet" href="common.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 <header>
@@ -20,6 +21,9 @@
    <a href="blog.html">Blogs</a>
    <a href="services.html">services</a>
    <a href="index.html">Home</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
   </div>
   </nav>
   <main style="text-align:center;padding:5px;background-color:#ffffff;">
@@ -117,5 +121,15 @@
       <footer>
         <p>copyright &copy;<a href="websuggetions.tech">websuggetions</a>all rights reserved</p>
       </footer>
+  <script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
       </body>
     </html>
