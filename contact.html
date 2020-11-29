@@ -9,6 +9,7 @@
   <title>Contact</title>
   <link rel="shortcut icon" href="favicon.png" type="x-icon">
   <link rel="stylesheet" href="common.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <style>
     form {
   border: 3px solid #f1f1f1;
@@ -50,14 +51,17 @@ input[type=submit]:hover {
 <body>
 <header>
   </header>
-<nav class="topnav">
-       <a href="about.html">About</a>
-   <a href="contact.html">Contact</a>
-   <a href="updates.html">News</a>
-   <a href="blog.html">Blogs</a>
-   <a href="services.html">services</a>
-   <a href="index.html">Home</a>
-</nav>
+<div class="topnav" id="myTopnav">
+  <a href="index.html" class="active">Home</a>
+  <a href="services.html">services</a>
+  <a href="blog.html">Blogs</a>
+  <a href="updates.html">News</a>
+  <a href="contact.html">Contact</a>
+  <a href="about.html">About</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
      <h3 class="center">Contact</h3>
         <nav class="center">
             <a href="index.html">Home</a>
