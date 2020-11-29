@@ -9,18 +9,22 @@
   <link rel="shortcut icon" href="favicon.png" type="x-icon">
   <link rel="stylesheet" href="common.css">
   <link rel="stylesheet" href="updates.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 <header>
   </header>
-<nav class="topnav">
-   <a href="about.html">About</a>
-   <a href="contact.html">Contact</a>
-   <a href="updates.html">News</a>
-   <a href="blog.html">Blogs</a>
-   <a href="services.html">services</a>
-   <a href="index.html">Home</a>
-</nav>
+<div class="topnav" id="myTopnav">
+  <a href="index.html" class="active">Home</a>
+  <a href="services.html">services</a>
+  <a href="blog.html">Blogs</a>
+  <a href="updates.html">News</a>
+  <a href="contact.html">Contact</a>
+  <a href="about.html">About</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
    <main>
      <div class="jumbotron">
           <h3 style="text-align:center">Letest news updates</h3>
@@ -56,5 +60,15 @@
       })
     }
   </script>
+  <script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
 </body>
 </html>
