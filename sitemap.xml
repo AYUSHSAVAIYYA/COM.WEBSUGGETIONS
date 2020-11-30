@@ -18,7 +18,7 @@
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.websuggetions.tech/index-2.html</loc>
+  <loc>https://www.websuggetions.tech/services.html</loc>
   <lastmod>2020-10-07T07:53:25+00:00</lastmod>
   <priority>0.80</priority>
 </url>
@@ -43,12 +43,12 @@
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.websuggetions.tech/t&amp;c</loc>
+  <loc>https://www.websuggetions.tech/t&c.html</loc>
   <lastmod>2020-10-07T07:53:25+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.websuggetions.tech/privacy%20police.html</loc>
+  <loc>https://www.websuggetions.tech/privacy police.html</loc>
   <lastmod>2020-10-07T07:53:25+00:00</lastmod>
   <priority>0.80</priority>
 </url>
@@ -59,6 +59,11 @@
 </url>
 <url>
   <loc>https://www.websuggetions.tech/blog-details.html</loc>
+  <lastmod>2020-10-07T07:53:25+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.websuggetions.tech/support.html</loc>
   <lastmod>2020-10-07T07:53:25+00:00</lastmod>
   <priority>0.64</priority>
 </url>
