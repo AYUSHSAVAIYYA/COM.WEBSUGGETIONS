@@ -1,1 +1,1 @@
-Affiliateayush.me
+WEBSUGGETIONS.COM
